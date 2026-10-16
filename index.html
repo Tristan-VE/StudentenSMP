@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StudentenSMP – PvP SMP voor studenten</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StudentenSMP">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="StudentenSMP – PvP SMP voor studenten">
+<meta property="og:description" content="Noord tegen Zuid. Kies je kant, verdedig je thuis en vecht in de Muur-arena. Minecraft Java 26.2.">
+<meta property="og:url" content="https://tristan-ve.github.io/StudentenSMP/">
+<meta property="og:image" content="https://tristan-ve.github.io/StudentenSMP/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="StudentenSMP logo met Noord en Zuid">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="StudentenSMP – PvP SMP voor studenten">
+<meta name="twitter:description" content="Noord tegen Zuid. Verdedig je thuis en vecht in de Muur-arena. Minecraft Java 26.2.">
+<meta name="twitter:image" content="https://tristan-ve.github.io/StudentenSMP/og.png">
+<meta name="theme-color" content="#0d130f">
+<meta name="description" content="StudentenSMP: een Minecraft Java PvP-SMP geïnspireerd op CreatorSMP. Noord tegen Zuid.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <img src="logo.png" alt=""><b>StudentenSMP</b>
+    <span class="sp"></span>
+    <a href="#features">Features</a>
+    <a href="spelers.html">Spelers</a>
+    <a href="ranglijst.html">Ranglijst</a>
+    <a href="#regels">Regels</a>
+    <a href="#faq">FAQ</a>
+    <a href="#lore">Lore</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <img src="logo.png" alt="StudentenSMP logo">
+    <h1>Student<span>en</span>SMP</h1>
+    <p class="tagline">De PvP-SMP voor studenten. Verdedig je thuis en maak jezelf onsterfelijk in de Muur-arena.</p>
+
+    <div class="ipbox">
+      <code>Het IP krijg je door een Mod</code>
+    </div>
+
+    <div class="badges">
+      <span class="badge" id="serverBadge"><span class="dot"></span><span id="serverText">Status laden…</span></span>
+      <span class="badge">Java Edition 26.2</span>
+      <span class="badge">PvP</span>
+      <span class="badge">Whitelist</span>
+    </div>
+    <a class="cta" href="spelers.html">Bekijk de spelers →</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- FEATURES -->
+<section id="features">
+  <h2>Wat maakt ons anders?</h2>
+  <p class="lead">Geïnspireerd op CreatorSMP, maar met onze eigen twist. Hier zijn de dingen waar je je op kunt verheugen.</p>
+  <div class="cards">
+    <div class="card"><div class="ico">⚔️</div><h3>Noord tegen Zuid</h3><p>Bij je eerste login word je automatisch in een team gezet. Twee kanten, één wereld, geen genade.</p></div>
+    <div class="card"><div class="ico">🏝️</div><h3>Spawn-eiland met parkour</h3><p>Je begint op een eigen eiland met parkour-routes. Doe een speedrun en probeer je eigen tijd te verbeteren.</p></div>
+    <div class="card"><div class="ico">🧱</div><h3>De Muur</h3><p>Een gigantische muur met een ontmoetingspoort en twee doolhoven scheidt de teams. Hoe en wanneer het open gaat, bepalen wij.</p></div>
+    <div class="card"><div class="ico">🚫</div><h3>Geen Nether en End voor de eerste paar dagen</h3><p>De eerste dagen zijn Nether en End dicht, zodat iedereen eerst in de Overworld kan settelen en vechten. Daarna gaan ze open.</p></div>
+    <div class="card"><div class="ico">🔱</div><h3>Eerlijke PvP</h3><p>Mace en speren zijn verboden, zodat gevechten gewoon skill blijven. Geen onzin, gewoon vechten.</p></div>
+    <div class="card"><div class="ico">🎆</div><h3>Stijlvol doodgaan</h3><p>Ga je dood, dan gaat er een vuurwerkshow af in de kleur van jouw team. Verlies met stijl.</p></div>
+  </div>
+  <div class="teams">
+    <div class="team noord"><h3>Noord</h3><p>Koud, scherp en georganiseerd. Jullie houden het hoofd koel als het erop aankomt.</p></div>
+    <div class="team zuid"><h3>Zuid</h3><p>Warm, fel en onvoorspelbaar. Jullie vechten met vuur en hebben nergens spijt van.</p></div>
+  </div>
+</section>
+
+<!-- TEAMSCORE -->
+<section id="score">
+  <h2>Stand van zaken</h2>
+  <p class="lead">Wie heeft de overhand? De score komt uit de serverstatistieken.</p>
+  <div class="score">
+    <div class="scard noord" data-team="noord">
+      <h3>Noord <span class="flag" data-f="lead"></span></h3>
+      <div class="stats">
+        <div><b data-f="kills">0</b><span>Kills</span></div>
+        <div><b data-f="levend">0</b><span>Levend</span></div>
+        <div><b data-f="spelers">0</b><span>Spelers</span></div>
+      </div>
+    </div>
+    <div class="scard zuid" data-team="zuid">
+      <h3>Zuid <span class="flag" data-f="lead"></span></h3>
+      <div class="stats">
+        <div><b data-f="kills">0</b><span>Kills</span></div>
+        <div><b data-f="levend">0</b><span>Levend</span></div>
+        <div><b data-f="spelers">0</b><span>Spelers</span></div>
+      </div>
+    </div>
+  </div>
+  <a class="cta small" href="ranglijst.html">Bekijk de ranglijst →</a>
+</section>
+
+<!-- REGELS -->
+<section id="regels">
+  <h2>De regels</h2>
+  <p class="lead">Kort en duidelijk, zodat iedereen plezier heeft. Lees ze even door voordat je joint.</p>
+  <ol class="rules">
+    <li><b>Geen hacks of cheats</b><span>Geen hacked clients, x-ray, killaura of andere voordelen die niet bij vanilla horen. Mods voor je scherm (zoals Sodium of een minimap) zijn prima, maar niet als ze je een oneerlijk voordeel geven.</span></li>
+    <li><b>Wees respectvol</b><span>Geen pesten, discriminatie, haat of bedreigingen, in de chat en ook niet buiten de server. Trash talk over PvP mag, zolang iedereen er om kan lachen.</span></li>
+    <li><b>Vecht eerlijk</b><span>Geen combat logging (uitloggen midden in een gevecht) en geen spawn-killing van spelers die net zijn gerespawnd.</span></li>
+    <li><b>Mace en speren zijn verboden</b><span>Die items worden automatisch van je afgepakt. Probeer er niet omheen te werken.</span></li>
+    <li><b>Geen bugs of exploits misbruiken</b><span>Dupen, glitchen door de Muur of andere gaten in het systeem uitbuiten kan een ban opleveren. Vind je een bug? Meld het, dan ben je een held.</span></li>
+    <li><b>Blijf van de Muur af</b><span>De Muur is bewaakt. Probeer hem niet te slopen, te omzeilen of eroverheen te komen buiten de officiële poort en doolhoven.</span></li>
+    <li><b>Eén account per persoon</b><span>Geen alt-accounts om voordeel te halen of om een ban te ontwijken.</span></li>
+    <li><b>Geen lag-machines of spam</b><span>Bouw geen constructies die de server vertragen en spam de chat niet vol.</span></li>
+    <li><b>De staff heeft het laatste woord</b><span>Ben je het ergens niet mee eens? Praat er rustig over, dan lossen we het op. Ruzie maken met staff helpt niet.</span></li>
+  </ol>
+  <p class="warn">Overtreed je de regels, dan krijg je een waarschuwing, een tijdelijke ban of een permanente ban, afhankelijk van hoe erg het is.</p>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>Veelgestelde vragen</h2>
+  <p class="lead">Staat je vraag er niet bij? Vraag het gerust aan een beheerder.</p>
+  <div class="faq">
+    <details><summary>Hoe join ik?</summary><p>De server werkt met een whitelist. Vraag een beheerder of je erop mag. Zodra je op de lijst staat, krijg je het IP.</p></details>
+    <details><summary>Welke versie heb je nodig?</summary><p>Minecraft Java Edition 26.2. Bedrock werkt niet op deze server.</p></details>
+    <details><summary>Hoe worden de teams verdeeld?</summary><p>Dat gaat automatisch bij je eerste login. Je komt in Noord of Zuid en je spawnt op jouw eigen kant van de Muur.</p></details>
+    <details><summary>Kan ik van team wisselen?</summary><p>Niet zelf. Vind je het echt nodig, vraag het dan aan een beheerder.</p></details>
+    <details><summary>Wat betekent het rode kruis bij een speler?</summary><p>Een speler met een rood kruis en een doorgestreepte naam op de spelerspagina is dood en doet niet meer mee.</p></details>
+    <details><summary>Wat gebeurt er als ik dood ga?</summary><p>Dan gaat er een vuurwerkshow af in de kleur van jouw team. Voor hoe de dood precies werkt volg je de uitleg van de beheerders.</p></details>
+    <details><summary>Wanneer gaan Nether en End open?</summary><p>Na de eerste paar dagen. We kondigen het aan zodra het zover is.</p></details>
+    <details><summary>Wat is de Muur?</summary><p>Een enorme muur die de teams scheidt, met één ontmoetingspoort en twee doolhoven. Of en wanneer die opengaan, bepalen de beheerders.</p></details>
+    <details><summary>Welke items zijn verboden?</summary><p>Maces, heavy cores en speren. Die worden automatisch van je afgepakt.</p></details>
+    <details><summary>Mag ik mods gebruiken?</summary><p>Alleen mods die je geen voordeel geven, zoals prestatiemods, een minimap of schaduwen. Hacked clients, x-ray en alles wat vecht voor je zijn verboden.</p></details>
+    <details><summary>Hoe worden de kills geteld?</summary><p>Uit de statistieken van de server. Het kan een poosje duren voordat een kill op de ranglijst staat.</p></details>
+    <details><summary>Ik heb een bug of een cheater gevonden</summary><p>Meld het bij een beheerder. Bugs melden is altijd beter dan ze misbruiken.</p></details>
+  </div>
+</section>
+
+<!-- LORE -->
+<section id="lore">
+  <h2>Het verhaal</h2>
+  <div class="lore">
+    <p>In het begin was er alleen land, en het land was van niemand. Toen kwamen de eersten, met een pickaxe in de hand en honger in de maag. Ze zijn studenten, want een beter woord had niemand.</p>
+    <p>Het duurde niet lang. Een plantage te veel, een kist die ineens leeg bleek, een belofte die niemand hield. Er werd gescholden, toen gevochten, en op een koude ochtend begon iemand te metselen.</p>
+    <p>De Muur groeide steen voor steen tot hij de horizon in tweeën sneed. Aan de ene kant het <em>Noorden</em>, bleek en hard als vorst. Aan de andere kant het <em>Zuiden</em>, heet van bloed en te trots om te buigen. Eén poort, twee doolhoven, en niemand die nog weet wie ze bouwde of waarom.</p>
+    <p>Vrede is er niet meer, alleen een pauze. Kies je kant. De wereld vergeet niet wat je daarna doet.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">StudentenSMP · Niet gelieerd aan Mojang of Microsoft · Minecraft is een handelsmerk van Mojang AB.</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

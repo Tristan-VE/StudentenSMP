@@ -1,0 +1,5 @@
+[
+  { "naam": "VoorbeeldSpeler1", "team": "noord", "kills": 4, "deaths": 1 },
+  { "naam": "VoorbeeldSpeler2", "team": "zuid",  "kills": 2, "deaths": 3, "dood": true },
+  { "naam": "VoorbeeldSpeler3", "team": "noord", "kills": 0, "deaths": 0 }
+]

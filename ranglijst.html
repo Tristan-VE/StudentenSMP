@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ranglijst – StudentenSMP</title>
+<link rel="icon" href="logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StudentenSMP">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Ranglijst – StudentenSMP">
+<meta property="og:description" content="Wie heeft de meeste kills? De ranglijst van StudentenSMP.">
+<meta property="og:url" content="https://tristan-ve.github.io/StudentenSMP/ranglijst.html">
+<meta property="og:image" content="https://tristan-ve.github.io/StudentenSMP/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="StudentenSMP logo met Noord en Zuid">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ranglijst – StudentenSMP">
+<meta name="twitter:description" content="Wie heeft de meeste kills? De ranglijst van StudentenSMP.">
+<meta name="twitter:image" content="https://tristan-ve.github.io/StudentenSMP/og.png">
+<meta name="theme-color" content="#0d130f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <img src="logo.png" alt=""><b>StudentenSMP</b>
+    <span class="sp"></span>
+    <a href="index.html">Home</a>
+    <a href="index.html#features">Features</a>
+    <a href="spelers.html">Spelers</a>
+    <a href="ranglijst.html" style="color:var(--text)">Ranglijst</a>
+    <a href="index.html#regels">Regels</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#lore">Lore</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section>
+    <h2>Ranglijst</h2>
+    <p class="lead">De meeste kills staan bovenaan. Bij gelijk aantal telt de verhouding tussen kills en deaths.</p>
+    <div class="tablewrap">
+      <table class="rank">
+        <thead><tr><th>#</th><th>Speler</th><th>Team</th><th class="num">Kills</th><th class="num">Deaths</th><th class="num">K/D</th></tr></thead>
+        <tbody id="ranglijstBody"></tbody>
+      </table>
+    </div>
+    <p class="empty" id="rankLeeg" hidden>Er staan nog geen spelers in de lijst.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">StudentenSMP · Niet gelieerd aan Mojang of Microsoft · Minecraft is een handelsmerk van Mojang AB.</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

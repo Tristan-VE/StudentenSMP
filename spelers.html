@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spelers – StudentenSMP</title>
+<link rel="icon" href="logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StudentenSMP">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Spelers – StudentenSMP">
+<meta property="og:description" content="Wie is er online en wie is er nog in leven? Bekijk alle spelers van StudentenSMP.">
+<meta property="og:url" content="https://tristan-ve.github.io/StudentenSMP/spelers.html">
+<meta property="og:image" content="https://tristan-ve.github.io/StudentenSMP/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="StudentenSMP logo met Noord en Zuid">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spelers – StudentenSMP">
+<meta name="twitter:description" content="Wie is er online en wie is er nog in leven? Bekijk alle spelers van StudentenSMP.">
+<meta name="twitter:image" content="https://tristan-ve.github.io/StudentenSMP/og.png">
+<meta name="theme-color" content="#0d130f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <img src="logo.png" alt=""><b>StudentenSMP</b>
+    <span class="sp"></span>
+    <a href="index.html">Home</a>
+    <a href="index.html#features">Features</a>
+    <a href="spelers.html" style="color:var(--text)">Spelers</a>
+    <a href="ranglijst.html">Ranglijst</a>
+    <a href="index.html#regels">Regels</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#lore">Lore</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section>
+    <h2>Spelers</h2>
+    <p class="lead">Groen is online, grijs is offline. Een rood kruis betekent dat die speler dood is.</p>
+    <div class="live">
+      <span class="badge" id="serverBadge"><span class="dot"></span><span id="serverText">Status laden…</span></span>
+      <span id="count"></span>
+    </div>
+    <div class="grid" id="spelersGrid"></div>
+    <div id="extraWrap" hidden>
+      <p class="lead" style="margin-top:20px">Ook online</p>
+      <div class="grid" id="extraGrid"></div>
+    </div>
+    <p class="empty" id="updated"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">StudentenSMP · Niet gelieerd aan Mojang of Microsoft · Minecraft is een handelsmerk van Mojang AB.</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
