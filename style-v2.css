@@ -1,7 +1,7 @@
   :root {
     --bg: #0d130f; --bg2: #121a14; --card: #16211a; --line: #243528;
     --text: #e8f0ea; --muted: #93a798;
-    --green: #4cc46e; --green-d: #2f9e4f; --noord: #4cc8e0; --zuid: #f0b23a; --red: #e0645a;
+    --green: #4cc46e; --green-d: #2f9e4f; --noord: #f0b23a; --zuid: #4cc8e0; --red: #e0645a;
     --pixel: "Press Start 2P", ui-monospace, Menlo, Consolas, monospace;
     color-scheme: dark;
   }

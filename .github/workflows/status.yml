@@ -1,0 +1,30 @@
+name: Serverstatus
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Status ophalen
+        env:
+          SERVER_ADRES: ${{ secrets.SERVER_ADRES }}
+        run: |
+          curl -fsS --max-time 20 "https://api.mcstatus.io/v2/status/java/${SERVER_ADRES}" -o raw.json || exit 0
+          jq '{live: true, online: (.online // false), aantal: (.players.online // 0), max: (.players.max // 0), spelers: [(.players.list // [])[] | (.name_clean // .name_raw)]}' raw.json > status.json
+          rm raw.json
+
+      - name: Opslaan als er iets veranderd is
+        run: |
+          git config user.name "status-bot"
+          git config user.email "status-bot@users.noreply.github.com"
+          git add status.json
+          git diff --cached --quiet || (git commit -m "Serverstatus bijgewerkt" && git push)
